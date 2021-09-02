@@ -1,0 +1,147 @@
+.gallowsContainer {
+  grid-row: 1/3;
+  display: grid;
+  place-content: center;
+}
+
+.gallows {
+  width: 300px;
+  height: 500px;
+  position: relative;
+}
+
+.bottom {
+  width: 100%;
+  height: 10px;
+  background: var(--gallowsBrown);
+  position: absolute;
+  bottom: 0;
+}
+.post {
+  width: 10px;
+  height: 100%;
+  background: var(--gallowsBrown);
+  position: absolute;
+  left: 30px;
+}
+.top {
+  width: 150px;
+  height: 10px;
+  background:  var(--gallowsBrown);
+  position: absolute;
+  left: 30px;
+}
+.down {
+  width: 10px;
+  height: 70px;
+  background: var(--gallowsBrown);
+  position: absolute;
+  left: 170px;
+}
+.angle {
+  width: 10px;
+  height: 120px;
+  background:  var(--gallowsBrown);
+  transform: rotate(45deg);
+  position: absolute;
+  left: 71px;
+  top: -12px;
+}
+
+.person {
+  position: absolute;
+  top: 68px;
+  left: 75px;
+}
+.head {
+  width: 50px;
+  height: 50px;
+  border: 5px solid black;
+  border-radius: 50%;
+  position: absolute;
+  left: 75px;
+}
+.torso {
+  width: 5px;
+  height: 150px;
+  background: black;
+  left: 98px;
+  position: absolute;
+  top: 50px;
+}
+.leftArm {
+  width: 5px;
+  height: 60px;
+  background: black;
+  left: 76px;
+  position: absolute;
+  top: 70px;
+  transform: rotate(45deg);
+}
+.rightArm {
+  width: 5px;
+  height: 60px;
+  background: black;
+  left: 119px;
+  position: absolute;
+  top: 70px;
+  transform: rotate(-45deg);
+}
+.leftLeg {
+  width: 5px;
+  height: 60px;
+  background: black;
+  left: 76px;
+  position: absolute;
+  top: 190px;
+  transform: rotate(45deg);
+}
+.rightLeg {
+  width: 5px;
+  height: 60px;
+  background: black;
+  left: 119px;
+  position: absolute;
+  top: 190px;
+  transform: rotate(-45deg);
+}
+
+
+
+
+@media screen and (max-width: 1000px) {
+  .gallows {
+    width: 175px;
+    height: 250px;
+  }
+ 
+  .top {
+    width: 100px;    
+    left: 30px;
+  }
+  .down {
+    height: 40px;
+    left: 130px;
+  }
+  .angle {
+    height: 70px;
+    left: 54px;
+    top: -4px;
+  }
+
+  .person {
+    top: 40px;
+    left: 35px;
+  }
+  .torso {
+    height: 100px;
+    left: 98px;
+    top: 50px;
+  }
+  .leftLeg {
+    top: 140px;
+  }
+  .rightLeg {
+    top: 140px;
+  }
+}
