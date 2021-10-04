@@ -1,5 +1,7 @@
 # Hangman-React
 
+**Live Link to Project: https://mm-hangman-react.web.app/**
+
 The classic game of Hangman. Try to solve the puzzle by guessing the correct letters. If you guess too many incorrect letters you lose!
 
 This game was made with ReactJS and has a responsive design to fit any screen. This game is the same as the one I made [here with vanilla JavaScript](https://github.com/MichaelMcCann1/Hangman). Please refer to the other repository for a more in-depth explanation on how the code works and for an explanation of the variables.
