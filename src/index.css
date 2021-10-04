@@ -12,7 +12,7 @@
 }
 
 body {
-  height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);
   display: grid;
   place-content: center;
   background: rgb(175, 255, 175);

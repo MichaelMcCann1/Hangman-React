@@ -145,3 +145,74 @@
     top: 140px;
   }
 }
+
+@media screen and (max-width: 550px) { 
+  .gallows {
+    width: 150px;
+    height: 200px;
+  }
+  .top {
+    width: 70px;    
+    left: 30px;
+    height: 5px;
+  }
+  .down {
+    height: 30px;
+    left: 100px;
+    width: 5px;
+  }
+  .angle {
+    height: 40px;
+    left: 45px;
+    top: -4px;
+    width: 5px;
+  }
+  .post {
+    width: 5px;
+    height: 100%;
+  }
+  .bottom {
+    height: 5px;
+  }
+
+  .person {
+    top: 30px;
+    left: 13px;
+  }
+  .head {
+    width: 30px;
+    height: 30px;
+    border: 3px solid black;
+  }
+  .torso {
+    height: 80px;
+    left: 88px;
+    top: 30px;
+    width: 3px;
+  }
+  .leftArm {
+    width: 3px;
+    height: 30px;
+    left: 76px;
+    top: 40px;
+  
+  }
+  .rightArm {
+    width: 3px;
+    height: 30px;
+    left: 100px;
+    top: 40px;
+  }
+  .leftLeg {
+    width: 3px;
+    height: 30px;
+    left: 77px;
+    top: 105px;
+  }
+  .rightLeg {
+    width: 3px;
+    height: 30px;
+    left: 99px;
+    top: 105px;
+  }
+}

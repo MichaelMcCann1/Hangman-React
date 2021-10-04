@@ -1,7 +1,24 @@
+.githubLink {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+
+.githubLink > img {
+  opacity: 0.3;
+  width: 30px;
+  height: 30px;
+  transition: all .5s ease;
+}
+
+.githubLink:hover > img {
+  opacity: 1;
+}
+
 .game {
   width: 90vw;
   max-width: 1200px;
-  height: 80vh;
+  height: calc(var(--vh, 1vh) * 80);
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
@@ -64,6 +81,7 @@
   }
 
   .word {
-    margin: .5em 0
+    margin: .5em 0;
+    font-size: 2.5rem;
   }
 }

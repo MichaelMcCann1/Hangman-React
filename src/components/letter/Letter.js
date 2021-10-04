@@ -6,8 +6,10 @@ export default function Letter({letter, checkLetter, resetClicked}) {
   const [clicked, setClicked] = useState(false)
 
   const handleClick = function(){
-    setClicked(true)
-    checkLetter(letter)
+    if (!clicked) {
+      setClicked(true)
+      checkLetter(letter)
+    }
   }
 
   useEffect(() => {
@@ -15,7 +17,7 @@ export default function Letter({letter, checkLetter, resetClicked}) {
   }, [resetClicked])
 
   return (
-    <div onClick={clicked ? undefined : () => handleClick()} className={clicked ? 'clicked' : ''}>
+    <div onClick={() => handleClick()} className={clicked ? 'clicked' : ''}>
       <p>{letter}</p>
     </div>
   )

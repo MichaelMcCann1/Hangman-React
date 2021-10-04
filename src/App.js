@@ -4,6 +4,9 @@ import Letter from './components/letter/Letter';
 import Gallows from './components/gallows/Gallows';
 import GameOver from './components/gameOver/GameOver';
 
+let vh = window.innerHeight * 0.01;
+document.documentElement.style.setProperty('--vh', `${vh}px`);
+
 function App() {
   const wordList = ['computer','book','fishing','basement','control','insulate','package','customer','outside','electrical','result','rubber','register','dryer','mirror','calculator','binder','purse']
 
@@ -70,6 +73,7 @@ function App() {
 
   return (
     <>
+      <a className="githubLink" href="https://github.com/MichaelMcCann1/Hangman-React"><img src="Images/GitHub.svg"></img></a>
       <div className="game">
         <Gallows strikes={strikes}/>
         <div className="word">

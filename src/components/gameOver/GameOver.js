@@ -1,9 +1,8 @@
 import React from 'react'
 import './gameOver.css'
 
-export default function GameOver({gameOver, winLose, resetGame, currentWord}) {
+export default function GameOver({winLose, resetGame, currentWord}) {
 
-  
   return (
     <>
       {winLose && <div className="popup">
